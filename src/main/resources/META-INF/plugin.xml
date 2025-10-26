@@ -1,15 +1,16 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.avrilfanomar.pluginator</id>
-    <name>pluginator</name>
+    <name>Pluginator</name>
     <vendor>avrilfanomar</vendor>
+
+    <description><![CDATA[
+    Plugin recommendation system for IntelliJ-based IDEs.
+    Connects to the Pluginator server to provide personalized plugin recommendations based on your installed plugins and usage patterns.
+    ]]></description>
 
     <depends>com.intellij.modules.platform</depends>
 
-    <resource-bundle>messages.MyBundle</resource-bundle>
-
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.avrilfanomar.pluginator.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
-        <postStartupActivity implementation="com.github.avrilfanomar.pluginator.startup.MyProjectActivity" />
     </extensions>
 </idea-plugin>
