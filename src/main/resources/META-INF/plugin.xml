@@ -12,4 +12,13 @@
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij"/>
+
+    <actions>
+        <action id="Pluginator.ShowRecommendations"
+                class="com.github.avrilfanomar.pluginator.actions.ShowRecommendationsAction"
+                text="Show Plugin Recommendations"
+                description="Display personalized plugin recommendations from Pluginator">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
+    </actions>
 </idea-plugin>
